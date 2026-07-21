@@ -13,8 +13,8 @@ The slides show XPath expressions like:
 
 ```
 //p[text()='Total Projects']/following-sibling::p
-//div[contains(@class,"govuk-error-summary")]//a
-//*[@id="f_radio_1-2"]
+//div[contains(@class,"govuk-error-summary")]//a  page.locator
+//*[@id="f_radio_1-2"] page.getByTestId('f_radio_1-2')
 //a[@class="govuk-header__link govuk-header__service-name"]
 ```
 
@@ -36,6 +36,7 @@ Each of these has a better equivalent. The cheatsheet maps every on-screen eleme
 3. **Go to `/users/new`**, submit the form without filling any fields. The error summary appears.
 
 4. Write a Playwright locator for one of the error links inside the error summary. Check the cheatsheet.
+page.getByRole('alert', {name: 'valid email is required'})
 
 5. **Discussion:** why does `page.getByRole('radio', { name: 'Admin' })` beat `//*[@id="role-admin"]`?
 
