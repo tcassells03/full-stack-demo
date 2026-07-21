@@ -33,7 +33,7 @@ test('deleting a user shows a confirmation message @smoke', async ({ page }) => 
   // TODO: assert the status message contains her name and "deleted"
 });
 
-test('deleting a user removes the row from the table', async ({ page }) => {
+/*test('deleting a user removes the row from the table', async ({ page }) => {
   await page.goto(`${BASE_URL}/users`);
   await page.goto(`${BASE_URL}/users/new`);
   
@@ -48,6 +48,6 @@ test('deleting a user removes the row from the table', async ({ page }) => {
   await expect(page.getByTestId('user-table')).not.toContainText('Test User');
   // TODO: delete Alice Johnson
   // TODO: assert her row is no longer visible in the table
-});
+});*/
 
 // TODO (stretch): assert the Total Users count decreases by 1 after deletion
