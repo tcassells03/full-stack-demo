@@ -47,3 +47,5 @@ Open `tests/pages/UsersListPage.ts`. Notice:
 - [ ] `CreateUserPage` has all locators and methods implemented
 - [ ] At least one test uses the POM (no raw locators in the test body)
 - [ ] `npx playwright test tests/ui` — all tests still pass
+
+
