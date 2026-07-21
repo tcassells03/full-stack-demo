@@ -61,7 +61,7 @@ test('Add user via UI shows error for duplicate email', async ({ page, request }
 test('Add user via UI Create User button is disabled until all fields are filled', async ({ page }) => {
   await page.goto(`${BASE_URL}/users/new`);
 
-  const submitBtn = page.getByRole('button', { name: 'Create User' });
+  const submitBtn = page.getByRole('button', { name: 'Create Userrr' });
 
   // E1-E: button starts disabled — all fields are empty
   await expect(submitBtn).toBeDisabled();
